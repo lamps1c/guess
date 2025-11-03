@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌸 Gender Reveal - Garden Continuous Confetti Hard</title>
+<title> 🎈과연 꼬미의 성별은~?🎉</title>
 <style>
 :root{
   --pink:#ff9acb;
@@ -141,7 +141,7 @@ body{
   <div id="circle"></div>
   <div id="targetRing"></div>
   <div id="arrow"></div>
-  <div id="result">👶 딸이에요! 💕</div>
+  <div id="result">🎀👶🎀 꼬미는 딸입니당~💕</div>
   <div id="miss">Miss!</div>
 </div>
 <button id="holdBtn">길게 누르세요</button>
@@ -155,11 +155,11 @@ const arrow=document.getElementById('arrow');
 const btn=document.getElementById('holdBtn');
 
 let holding=false;
-let scale=1.0;
+let scale=2.0;
 let interval;
-let shrinkSpeed=0.018; // 하드 모드 - 훨씬 빠름
-let targetScale=0.5;
-let margin=0.02; // 타이밍 마진 좁게
+let shrinkSpeed=0.01; // 하드 모드 - 훨씬 빠름
+let targetScale=0.2;
+let margin=0.01; // 타이밍 마진 좁게
 let fireworksInterval;
 
 function start(){
