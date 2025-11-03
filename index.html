@@ -64,13 +64,34 @@ body{
   justify-content:center;
   align-items:center;
 }
-#balloon span{
-  font-size:1.5em;
-  font-weight:700;
-  line-height:1em;
+#balloon span {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1em;
 }
-#balloon .boy{color:#6ec9ff; text-shadow:0 0 8px rgba(110,201,255,0.6);}
-#balloon .girl{color:var(--pink); text-shadow:0 0 8px rgba(255,126,185,0.6);}
+
+/* '꼬미는 과연?'에 파랑-분홍 그라데이션 적용 */
+#balloon span:first-child {
+  background: linear-gradient(90deg, #6ec9ff, var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  font-weight: 800;
+}
+
+/* 'Boy?'는 파란색으로 */
+#balloon .boy {
+  color: #6ec9ff;
+  text-shadow: 0 0 8px rgba(110,201,255,0.6);
+}
+
+/* 'Girl?'은 분홍색으로 */
+#balloon .girl {
+  color: var(--pink);
+  text-shadow: 0 0 8px rgba(255,126,185,0.6);
+}
+
 #arrow{
   position:absolute;
   bottom:60px;
